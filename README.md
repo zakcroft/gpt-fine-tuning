@@ -1,4 +1,4 @@
-## GPT Fine-Tuning using Node.js
+## GPT Fine-Tuning
 
 This project show how to easily fine-tune a GPT data model. This codebase goes along with the tutorial located [here](https://nader.substack.com/p/supercharge-your-gpt-model-custom).
 
@@ -15,18 +15,19 @@ You’ll also need an OpenAI API Key. You can get one at [https://openai.com](ht
 
 First, clone the repo and install the dependencies:
 
-```sh
-git clone https://github.com/dabit3/gpt-fine-tuning-with-nodejs.git
-
-cd gpt-fine-tuning-with-nodejs
-
+```
 npm install # or yarn
 ```
 
-Next, set the environment variable for your OpenAI API Key
+Next, set the environment variable for your OpenAI API Key in a .env file:
 
-```sh
-export OPENAI_KEY="your-api-key"
+```
+OPENAI_KEY=sk-...
+
+On updates...
+TRAINING_FILE_ID=file-...
+TRAINED_MODEL_NAME=file-...
+FINE_TUNE_ID=...
 ```
 
 ### Running the app
@@ -64,3 +65,14 @@ Next, run the script:
 ```sh
 node createCompletion.js
 ```
+
+### Notes
+ Seems to cost about 2 dollars to train
+
+ You can ony fine tune davinci, ada, babbage and curie
+```
+ davinci:ft-personal:lens-protocol-2023-06-16-10-04-35
+ 72,224 trained tokens
+ Yikes!
+```
+

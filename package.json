@@ -1,7 +1,7 @@
 {
   "name": "fine-tuning-gpt",
   "version": "1.0.0",
-  "description": "GPT Fine-Tuning using Node.js",
+  "description": "GPT Fine-Tuning",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "openai": "^3.2.1"
+    "dotenv": "^16.2.0",
+    "openai": "^3.3.0"
   }
 }
